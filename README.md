@@ -18,7 +18,7 @@ Install the requirements using `pip install -r requirements.txt` (uses Selenium)
 ```python
 >>> from main import ExchangeRateCalculator
 >>> ExchangeRateCalculator().get_last_updated()
-02/03/2022
+02/03/2023
 >>> ExchangeRateCalculator().get_exchange_rate('CHF')
 1.1012
 ```
