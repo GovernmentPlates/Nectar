@@ -16,10 +16,10 @@ Install the requirements using `pip install -r requirements.txt` (uses Selenium)
 
 ## Example
 ```python
->>> from main import ExchangeRateCalculator
->>> ExchangeRateCalculator().get_last_updated()
+>>> from nectar import Nectar
+>>> Nectar().get_last_updated()
 02/03/2023
->>> ExchangeRateCalculator().get_exchange_rate('CHF')
+>>> Nectar().get_exchange_rate('CHF')
 1.1012
 ```
 

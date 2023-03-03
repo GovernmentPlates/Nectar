@@ -1,15 +1,15 @@
 """
-Nationwide Exchange Rate Calculator
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Nationwide Exchange Rate Scraper
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This script uses Selenium to scrape the exchange rates from the Nationwide website.
 Rates shown are for GBP (£) to the currency specified.
 
 Basic Usage:
-    >>> from main import ExchangeRateCalculator
-    >>> ExchangeRateCalculator().get_last_updated()
+    >>> from nectar import Nectar
+    >>> Nectar().get_last_updated()
     '02/03/2023'
-    >>> ExchangeRateCalculator().get_exchange_rate('CHF')
+    >>> Nectar().get_exchange_rate('CHF')
     1.1012
 """
 from selenium import webdriver
@@ -19,7 +19,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.chrome.options import Options
 
 
-class ExchangeRateCalculator:
+class Nectar:
     def __init__(self):
         self.chrome_options = Options()
         self.chrome_options.add_argument('--headless')

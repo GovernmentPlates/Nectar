@@ -1,13 +1,13 @@
 import unittest
 from unittest.mock import MagicMock, patch
-from main import ExchangeRateCalculator
+from nectar import Nectar
 
 
-class TestExchangeRateCalculator(unittest.TestCase):
+class TestNectar(unittest.TestCase):
 
     @patch('main.webdriver.Chrome')
     def setUp(self, mock_webdriver):
-        self.calculator = ExchangeRateCalculator()
+        self.calculator = Nectar()
 
     def test_get_last_updated(self):
         mock_element = MagicMock()
